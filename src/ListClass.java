@@ -28,11 +28,7 @@ public class ListClass {
     
     private static void queuePractice() {
     	Queue<String> queue = new ArrayDeque<>();
-    	queue.add("あ");
-    	queue.add("い");
-    	queue.add("う");
-    	queue.add("え");
-    	queue.add("お");
+    	queue.add("あ");queue.add("い");queue.add("う");queue.add("え");queue.add("お");
     	queue.forEach(i -> System.out.print(i)); 
     	nl();
     	System.out.println(queue.poll()); 
@@ -42,11 +38,7 @@ public class ListClass {
     	bar();
     	
     	Stack<String> stack = new Stack<>();
-    	stack.add("あ");
-    	stack.add("い");
-    	stack.add("う");
-    	stack.add("え");
-    	stack.add("お");
+    	stack.add("あ");stack.add("い");stack.add("う");stack.add("え");stack.add("お");
     	stack.forEach(i -> System.out.print(i)); 
     	nl();
     	System.out.println(stack.pop()); 
@@ -81,45 +73,17 @@ public class ListClass {
 
     private static void setPractice() {
     	Set<String> set1 = new HashSet<String>();
+    	 set1.add("Windows");set1.add("4");set1.add("いいい");set1.add("macOS");set1.add("あああ");
+         set1.add("Linux");set1.add("1");set1.add("ううう");set1.add("ううう");set1.add("ううう");
     	
-        Set<String> set2 = new TreeSet<String>() {
-            {
-              add("Windows");
-              add("4");             
-              add("いいい");
-              add("macOS");
-              add("あああ");
-              add("Linux");
-              add("1");
-              add("ううう");
-              add("ううう");
-              add("ううう");
-            }
-        };   
+        Set<String> set2 = new TreeSet<String>() {{add("Windows");add("4");add("いいい");add("macOS");
+        										   add("あああ");add("Linux");add("1");add("ううう");add("ううう");add("ううう");}};
+        	
         Set<String> set3 = new LinkedHashSet<String>() {
-            {
-              add("Windows");
-              add("4");             
-              add("いいい");
-              add("macOS");
-              add("あああ");
-              add("Linux");
-              add("1");
-              add("ううう");
-              add("ううう");
-              add("ううう");
-            }
+            	{add("Windows");add("4");add("いいい");add("macOS");add("あああ");
+            	add("Linux");add("1");add("ううう");add("ううう");add("ううう");}
         };   
-        set1.add("Windows");
-        set1.add("4");             
-        set1.add("いいい");
-        set1.add("macOS");
-        set1.add("あああ");
-        set1.add("Linux");
-        set1.add("1");
-        set1.add("ううう");
-        set1.add("ううう");
-        set1.add("ううう");
+        
     	set1.forEach(i -> System.out.println(i));
     	bar();
     	set2.forEach(i -> System.out.println(i)); 
